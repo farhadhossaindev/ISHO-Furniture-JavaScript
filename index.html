@@ -200,34 +200,40 @@
               </div>
             </div>
           </section>
+
+
           <!================== POPULAR SEARCHES section END=======================>
 
             <!================== ART BY PRICE section Start=======================>
-              <section>
-                <div class="custome-container art-by-price-content">
+              <section class=" custome-container sitepadding ">
+                <div class=" category-by-price-content">
                   <h1>ART BY PRICE <i class="bi bi-arrow-down-right bold-icon"></i></h1>
-                  <ul class="d-flex list-unstyled mt-2 gap-3 w-auto flex-wrap popular-searches-list">
-                    <li>
-                      <a href="#" class="text-decoration-none">Under ৳10,000</a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-decoration-none">৳10,000 - ৳25,000</a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-decoration-none">৳25,000 - ৳50,000</a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-decoration-none">৳50,000 - ৳100,000</a>
-                    </li>
-                    <li>
-                      <a href="#" class="text-decoration-none">Over ৳100,000</a>
-                    </li>
-                  </ul>
+
+                  <div class="custome-container art-by-price-content">
+                    <ul class="d-flex list-unstyled mt-2 gap-3 w-auto flex-wrap popular-searches-list">
+                      <li>
+                        <a href="#" class="text-decoration-none">Under ৳10,000</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none">৳10,000 - ৳25,000</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none">৳25,000 - ৳50,000</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none">৳50,000 - ৳100,000</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-decoration-none">Over ৳100,000</a>
+                      </li>
+                    </ul>
+                  </div>
+
                 </div>
               </section>
               <!================== ART BY PRICE section End=======================>
                 <!================== SHOP BY CATEGORY section Start=======================>
-                  <section>
+                  <!-- <section>
                     <div class="custome-container category-by-price-content">
                       <h1>
                         SHOP BY CATEGORY <i class="bi bi-arrow-down-right bold-icon"></i>
@@ -268,16 +274,70 @@
                         </div>
                       </div>
                     </div>
+                  </section> -->
+
+
+                  <section class=" custome-container sitepadding ">
+                    <div class=" category-by-price-content">
+                      <h1>
+                       SHOP BY CATEGORY <i class="bi bi-arrow-down-right bold-icon"></i>
+                      </h1>
+
+                       <div class="category-section">
+                        <div class="slider-container">
+                          <button class="nav-btn prev-btn" aria-label="Previous Category">
+                            <i class="bi bi-chevron-left"></i>
+                          </button>
+
+                          <div class="category-slider" id="categorySlider">
+                            <div class="category-item">
+                              <img src="/assets/img/gallery/Rectangle1.png" alt="Acrylic Paintings"
+                                class="item-image" />
+                              <p class="category-name">Acrylic Paintings</p>
+                            </div>
+
+                            <div class="category-item">
+                              <img src="/assets/img/gallery/Rectangle2.png" alt="Oil Paintings" class="item-image" />
+                              <p class="category-name">Oil Paintings</p>
+                            </div>
+
+                            <div class="category-item">
+                              <img src="/assets/img/gallery/Rectangle3.png" alt="Mixed Media" class="item-image" />
+                              <p class="category-name">Mixed Media</p>
+                            </div>
+
+                            <div class="category-item">
+                              <img src="/assets/img/gallery/Rectangle4.png" alt="Watercolor" class="item-image" />
+                              <p class="category-name">Watercolor</p>
+                            </div>
+                          </div>
+
+                          <button class="nav-btn next-btn" aria-label="Next Category">
+                            <i class="bi bi-chevron-right"></i>
+                          </button>
+                        </div>
+                      </div>
+
+                    
+                    </div>
                   </section>
+
+
+
+
+
+
+
                   <!================== SHOP BY CATEGORY section END=======================>
 
-                    <section>
-                      <div class="custome-container category-by-price-content">
-                        <h1>
-                          MEET OUR ARTISTS <i class="bi bi-arrow-down-right bold-icon"></i>
-                        </h1>
 
-                        <div class="custome-container">
+                    <!================== MEET OUR ARTISTS section START=======================>
+                      <section class=" custome-container sitepadding ">
+                        <div class=" category-by-price-content">
+                          <h1>
+                            MEET OUR ARTISTS <i class="bi bi-arrow-down-right bold-icon"></i>
+                          </h1>
+
                           <!-- Filter Buttons -->
                           <div class="filter-btns">
                             <button class="btn active" data-filter="popular">Popular Artist</button>
@@ -286,53 +346,109 @@
                             <button class="btn" data-filter="all">All Artists</button>
                           </div>
 
-                          <!-- Artist Cards -->
-                          <div class="d-flex flex-wrap g-4" id="artist-gallery">
-                            <!-- Popular Artists -->
-                            <div class="artist-card p-2" data-category="popular">
-                              <img src="/assets/img/gallery/Rectangle10.png" alt="Artist" class="img-fluid" />
+                          <div class="row g-3 custom-5cards-row">
+                            <!-- Card 1 -->
+                            <div class="col-custom artist-card" data-category="popular">
+                              <img src="/assets/img/gallery/Rectangle10.png" alt="Artist" class="card-img-top" />
                               <div class="artist-name">Abdus Satter Toufiq</div>
                               <div class="artist-location">Barisal, Bangladesh</div>
                             </div>
 
-                            <div class="artist-card p-2" data-category="popular">
-                              <img src="/assets/img/gallery/Rectangle11.png" alt="Artist" class="img-fluid" />
+                            <div class="col-custom artist-card" data-category="popular">
+                              <img src="/assets/img/gallery/Rectangle11.png" alt="Artist" class="card-img-top" />
                               <div class="artist-name">Ahmed Shamsuddoha</div>
                               <div class="artist-location">Bangladesh</div>
                             </div>
 
                             <!-- Upcoming Artists -->
-                            <div class="artist-card p-2" data-category="upcoming">
-                              <img src="/assets/img/gallery/Rectangle12.png" alt="Artist" class="img-fluid" />
+                            <div class="col-custom artist-card" data-category="upcoming">
+                              <img src="/assets/img/gallery/Rectangle12.png" alt="Artist" class="card-img-top" />
                               <div class="artist-name">Auntora Mehrukh Azad</div>
                               <div class="artist-location">Bangladesh</div>
                             </div>
 
                             <!-- Most Visited -->
-                            <div class="artist-card p-2" data-category="visited">
-                              <img src="/assets/img/gallery/Rectangle13.png" alt="Artist" class="img-fluid" />
+                            <div class="col-custom artist-card" data-category="visited">
+                              <img src="/assets/img/gallery/Rectangle13.png" alt="Artist" class="card-img-top" />
                               <div class="artist-name">Dilara Begum Jolly</div>
                               <div class="artist-location">Dhaka, Bangladesh</div>
                             </div>
 
-                            <div class="artist-card p-2" data-category="visited upcoming">
-                              <img src="/assets/img/gallery/Rectangle14.png" alt="Artist" class="img-fluid" />
+                            <div class="col-custom artist-card" data-category="visited upcoming">
+                              <img src="/assets/img/gallery/Rectangle14.png" alt="Artist" class="card-img-top" />
                               <div class="artist-name">Mohammad Iqbal</div>
                               <div class="artist-location">Bangladesh</div>
                             </div>
                           </div>
+
                         </div>
-                      </div>
-                    </section>
+                      </section>
+                      <!================== MEET OUR ARTISTS section END=======================>
 
+                        <!================== FEATURES section START=======================>
+                          <section class="features-section-pdding-bottom custome-container sitepadding ">
+                            <div class=" category-by-price-content">
+                              <h1>
+                                FEATURES <i class="bi bi-arrow-down-right bold-icon"></i>
+                              </h1>
 
-                    <!--  Footer Include -->
-                    <div include-html="./components/layout/footer.html"></div>
-                    <!-- Include JS -->
-                    <script src="./js/include.js"></script>
-                    <script src="./js/custom.js"></script>
-                    <!---------- added bootstrap js  ---------->
-                    <script src="/assets/bootstrap-5.3.8/js/bootstrap.min.js"></script>
+                              <div class="row g-3 custom-5cards-row">
+                                <!-- Card 1 -->
+                                <div class="card  border-0 bg-transparent position-relative col-custom">
+                                  <div class="position-relative">
+                                    <img src="/assets/img/gallery/Maskgroup1.png" class="card-img-top" alt="Feature">
+                                    <a href="#" class="btn-feature text-decoration-none">Interview</a>
+                                  </div>
+                                  <div class="feature-card-text">Vision Talk With Rayana Hossain</div>
+
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="card  border-0 bg-transparent position-relative col-custom">
+                                  <div class="position-relative">
+                                    <img src="/assets/img/gallery/Maskgroup2.png" class="card-img-top" alt="Feature">
+                                    <a href="#" class="btn-feature text-decoration-none">Spotlight</a>
+                                  </div>
+                                  <div class="feature-card-text">Uamrul Hassan; Unveiling The Soul of Bengal</div>
+                                </div>
+
+                                <!-- Card 3-->
+                                <div class="card border-0 bg-transparent position-relative col-custom">
+                                  <div class="position-relative">
+                                    <img src="/assets/img/gallery/Maskgroup3.png" class="card-img-top" alt="Feature">
+                                    <a href="#" class="btn-feature text-decoration-none">Interview</a>
+                                  </div>
+                                  <div class="feature-card-text">What inspires Professor Nisar Hossain?</div>
+                                </div>
+                                <!-- Card 4-->
+                                <div class="card border-0 bg-transparent position-relative col-custom">
+                                  <div class="position-relative">
+                                    <img src="/assets/img/gallery/Maskgroup4.png" class="card-img-top" alt="Feature">
+                                    <a href="#" class="btn-feature text-decoration-none">Spotlight</a>
+                                  </div>
+                                  <div class="feature-card-text">Explore Eunus’s Process</div>
+                                </div>
+                                <!-- Card -->
+                                <div class="card border-0 bg-transparent position-relative col-custom">
+                                  <div class="position-relative">
+                                    <img src="/assets/img/gallery/Maskgroup5.png" class="card-img-top" alt="Feature">
+                                    <a href="#" class="btn-feature text-decoration-none">Events</a>
+                                  </div>
+                                  <div class="feature-card-text">Inaugural Event of Platforms</div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </section>
+                          <!================== FEATURES section END=======================>
+
+      </div>
+      <!--  Footer Include -->
+      <div include-html="./components/layout/footer.html"></div>
+      <!-- Include JS -->
+      <script src="./js/include.js"></script>
+      <script src="./js/custom.js"></script>
+      <!---------- added bootstrap js  ---------->
+      <script src="/assets/bootstrap-5.3.8/js/bootstrap.min.js"></script>
 </body>
 
 </html>

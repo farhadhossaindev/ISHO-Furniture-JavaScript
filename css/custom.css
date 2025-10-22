@@ -2,6 +2,7 @@
   font-family: raleway;
   src: url("../assets/fonts/Raleway-VariableFont_wght.ttf");
 }
+
 @font-face {
   font-family: helvetica;
   src: url("../assets/fonts/Helvetica.ttf");
@@ -13,9 +14,15 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .custome-container {
   max-width: 1366px !important;
   margin: auto;
+}
+
+.sitepadding {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 /*==================================Header  css Start================================= */
@@ -166,6 +173,7 @@
     font-size: 0.8rem;
   }
 }
+
 /* ---------Offcanvas Menu------------ */
 .custom-offcanvas {
   width: 80% !important;
@@ -186,6 +194,7 @@
   font-size: 20px;
   color: #000;
 }
+
 /*==================================Header  css end================================= */
 /*==================================Slider  css Start================================= */
 .slider {
@@ -265,11 +274,13 @@
 .popular-searches {
   background-color: #faf7f4;
 }
+
 .porpular-searches-content {
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
 }
+
 .porpular-searches-content h1 {
   display: inline-block;
   cursor: pointer;
@@ -288,6 +299,7 @@
   display: inline-block;
   transition: background 0.3s, color 0.3s;
 }
+
 .porpular-searches-content ul li a:hover {
   background-color: #000000;
   color: #fff;
@@ -296,18 +308,21 @@
 .gallery-heading {
   margin-top: 55px;
 }
+
 .gallery-price {
   font-weight: 600;
   font-size: 18px;
   margin-top: 14px;
   font-family: raleway;
 }
+
 .gallery-title {
   font-weight: 600;
   font-size: 18px;
   margin-top: 10px;
   font-family: raleway;
 }
+
 .gallery-desc {
   font-family: Raleway;
   font-weight: 400;
@@ -315,6 +330,7 @@
   font-size: 16px;
   color: #777777;
 }
+
 .gallery-padding {
   padding: 20px 20px 14px 20px;
   border: 1px solid rgba(175, 175, 175, 1);
@@ -327,6 +343,7 @@
   align-items: center;
   width: 100%;
 }
+
 .gallery-cart-icon {
   display: flex;
   justify-content: center;
@@ -349,16 +366,19 @@
 .margin-card {
   margin-left: 20px;
 }
+
 @media (max-width: 512px) {
   .margin-card {
     margin-left: 0px;
   }
 }
+
 /*==================================POPULAR SEARCHES css END================================= */
 
 .art-by-price-content {
-  padding-top: 50px;
+  padding-top: 15px;
 }
+
 .art-by-price-content ul li a {
   color: #000;
   border: 0.7px solid #000000;
@@ -368,6 +388,7 @@
   display: inline-block;
   transition: background 0.3s, color 0.3s;
 }
+
 .art-by-price-content ul li a:hover {
   background-color: #000000;
   color: #fff;
@@ -377,19 +398,24 @@
   font-weight: 900;
   font-family: helvetica;
 }
-.art-by-price-content {
-  padding-left: 50px;
-  padding-right: 50px;
-}
+
+
+
 /*==================================ART BY price css END================================= */
-.category-by-price-content {
-  padding-left: 50px;
-  padding-right: 50px;
+
+
+
+
+/*==================================SHOP BY CATEGORY css Start================================= */
+
+.features-section-pdding-bottom {
+  padding-bottom: 50px;
 }
+
 .category-by-price-content h1 {
   font-weight: 900;
   font-family: helvetica;
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .category-section {
@@ -407,7 +433,7 @@
 
 .category-slider {
   display: flex;
-  gap: 26px;
+  gap: 30px;
   overflow-x: auto;
 }
 
@@ -459,103 +485,185 @@
 }
 
 .prev-btn {
-  left: -40px;
+  left: -25px;
 }
 
 .next-btn {
-  right: -40px;
+  right: -25px;
 }
 
 @media (max-width: 1024px) {
   .category-item {
-    flex: 0 0 calc(33.33% - 15px); 
+    flex: 0 0 calc(33.33% - 15px);
   }
+
   .prev-btn {
-    left: -40px;
+    left: -20px;
   }
+
   .next-btn {
-    right: -40px;
+    right: -20px;
   }
 }
 
 @media (max-width: 768px) {
   .category-item {
-    flex: 0 0 calc(50% - 10px); 
+    flex: 0 0 calc(50% - 10px);
   }
+
   .prev-btn {
-    left: -30px;
+    left: -0px;
   }
+
   .next-btn {
-    right: -30px;
+    right: -0px;
   }
 }
 
 @media (max-width: 480px) {
   .category-item {
-    flex: 0 0 calc(80% - 10px); /
+    flex: 0 0 calc(80% - 10px);/
   }
 }
 
-/*==================================Category css END================================= */
+/*==================================SHOP BY CATEGORY css END================================= */
+
+
+
+/*==================================Artist css Start================================= */
+
+.filter-btns {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.filter-btns .btn {
+  border-radius: 25px;
+  margin: 5px;
+  padding: 6px 20px;
+  border: 1px solid #000;
+  color: #000;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.filter-btns .btn.active,
+.filter-btns .btn:hover {
+  background-color: #d1c2a0;
+  color: #000;
+  border-color: #d1c2a0;
+}
+
+.artist-card {
+  border: none;
+  overflow: hidden;
+  background: transparent;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.artist-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.artist-name {
+  margin-top: 7px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: underline;
+  font-size: 15px;
+}
 
+.artist-location {
+  font-size: 13px;
+  color: gray;
+}
 
+/*==================================Artist css END================================= */
 
 
 
+/*==================================FEATURES css Start================================= */
+.custom-5cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 
+}
 
+.col-custom {
+  flex: 1 1 calc(20% - 12px);
+  max-width: calc(20% - 12px);
+}
 
+.card-img-top {
+  border-radius: 0px;
+  position: relative;
+}
 
+.btn-feature {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  color: black;
+  background: rgba(229, 204, 155, 1);
+  font-family: 'Raleway', sans-serif;
+  padding: 7px 14px;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
 
-    .filter-btns {
-      text-align: center;
-      padding: 20px 0;
-    }
+}
 
-    .filter-btns .btn {
-      border-radius: 25px;
-      margin: 5px;
-      padding: 6px 20px;
-      border: 1px solid #000;
-      color: #000;
-      background: #fff;
-      transition: 0.3s;
-    }
+.feature-card-text {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  margin-top: 10px;
 
-    .filter-btns .btn.active,
-    .filter-btns .btn:hover {
-      background-color: #d1c2a0;
-      color: #000;
-      border-color: #d1c2a0;
-    }
+}
 
-    .artist-card {
-      text-align: center;
-      transition: 0.3s;
-    }
+.btn-feature:hover {
+  background: black;
+  color: white;
+}
 
-    .artist-card img {
-      width: 230px;
-      height: 230px;
-      object-fit: cover;
-    }
 
-    .artist-name {
-      margin-top: 7px;
-      margin-bottom: 12px;
-      font-weight: 600;
-      color: #000;
-      text-decoration: underline;
-      font-size: 15px;
-    }
 
-    .artist-location {
-      font-size: 13px;
-      color: gray;
-    }
+@media (max-width: 1366px) {
+  .col-custom {
+    flex: 1 1 calc(33.333% - 12px);
+    max-width: calc(33.333% - 12px);
+  }
+}
 
+@media (max-width: 768px) {
+  .col-custom {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+  }
+}
 
+@media (max-width: 576px) {
+  .col-custom {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
 
+/*==================================FEATURES css END================================= */
 
 
 
@@ -596,58 +704,57 @@
 
 
 
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+  font-family: raleway;
+}
 
-  .footer {
-      background-color: #000;
-      color: #fff;
-      padding: 60px 0;
-      font-family: raleway;
-    }
-
-
-    .footer .logo span {
-      display: block;
-      font-weight: 500;
-    }
-
-    .footer a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .footer a:hover {
-      color: #ccc;
-    }
-
-    .footer .contact-info p {
-      margin: 6px 0;
-      font-size: 14px;
-    }
-
-    .footer .newsletter-form input {
-      background: transparent;
-      border: 1px solid #fff;
-      color: #fff;
-      border-radius: 5px;
-      padding: 8px 10px;
-      outline: none;
-    }
-
-    .footer .newsletter-form input::placeholder {
-      color: #ccc;
-    }
-
-    .footer .newsletter-form button {
-      background-color: #fff;
-      color: #000;
-      border: none;
-      border-radius: 25px;
-      padding: 8px 25px;
-      margin-top: 10px;
-      transition: 0.3s;
-    }
-
-    .footer .newsletter-form button:hover {
-      background-color: #ccc;
-    }
+
+.footer .logo span {
+  display: block;
+  font-weight: 500;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  color: #ccc;
+}
+
+.footer .contact-info p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer .newsletter-form input {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 10px;
+  outline: none;
+}
+
+.footer .newsletter-form input::placeholder {
+  color: #ccc;
+}
+
+.footer .newsletter-form button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 25px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.footer .newsletter-form button:hover {
+  background-color: #ccc;
+}
