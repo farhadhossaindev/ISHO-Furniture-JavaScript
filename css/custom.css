@@ -687,12 +687,14 @@
 
 .letter-News {
   width: 245px;
-  background: transparent;
+  padding: 8px 12px;
+  background: black;
   color: #fff;
-  border: 1px solid #ccc;
-
-
-  border: 0.7px solid rgba(249, 247, 244, 1)
+  border: 0.7px solid rgba(249, 247, 244, 1);
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
 }
 
 .letter-News::placeholder {
@@ -704,10 +706,18 @@
   outline: none;
   border-color: #fff;
   background: transparent;
+  box-shadow: none;
 }
 
 .form-control.letter-News:focus {
   background: transparent !important;
   box-shadow: none;
   border-color: #fff;
+}
+
+.submit-btn {
+  background: rgba(249, 247, 244, 1);
+  padding: 7px 15px;
+  border-radius: 50px;
+  width: 100px;
 }
