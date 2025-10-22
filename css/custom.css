@@ -345,7 +345,6 @@
 .gallery-padding {
   padding: 20px 20px 14px 20px;
   border: 1px solid rgba(175, 175, 175, 1);
-  margin-top: 25px;
 }
 
 .gallery-item {
@@ -374,15 +373,6 @@
   transform: scale(1.1);
 }
 
-.margin-card {
-  margin-left: 20px;
-}
-
-@media (max-width: 512px) {
-  .margin-card {
-    margin-left: 0px;
-  }
-}
 
 /*==================================POPULAR SEARCHES css END================================= */
 
