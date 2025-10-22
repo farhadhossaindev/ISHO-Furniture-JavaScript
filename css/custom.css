@@ -27,6 +27,17 @@
 
 /*==================================Header  css Start================================= */
 
+
+.mobail-slider {
+  width: 100%;
+}
+
+.mobail-slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .header-shadow {
   box-shadow: 5px 3px 8px 5px rgba(0, 0, 0, 0.051);
 }
@@ -667,94 +678,36 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
-  background-color: #000;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-family: Raleway;
   color: #fff;
-  padding: 60px 0;
-  font-family: raleway;
 }
 
-
-.footer .logo span {
-  display: block;
-  font-weight: 500;
-}
-
-.footer a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.footer a:hover {
-  color: #ccc;
-}
-
-.footer .contact-info p {
-  margin: 6px 0;
-  font-size: 14px;
-}
-
-.footer .newsletter-form input {
+.letter-News {
+  width: 245px;
   background: transparent;
-  border: 1px solid #fff;
   color: #fff;
-  border-radius: 5px;
-  padding: 8px 10px;
+  border: 1px solid #ccc;
+
+
+  border: 0.7px solid rgba(249, 247, 244, 1)
+}
+
+.letter-News::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.letter-News:focus {
   outline: none;
+  border-color: #fff;
+  background: transparent;
 }
 
-.footer .newsletter-form input::placeholder {
-  color: #ccc;
-}
-
-.footer .newsletter-form button {
-  background-color: #fff;
-  color: #000;
-  border: none;
-  border-radius: 25px;
-  padding: 8px 25px;
-  margin-top: 10px;
-  transition: 0.3s;
-}
-
-.footer .newsletter-form button:hover {
-  background-color: #ccc;
+.form-control.letter-News:focus {
+  background: transparent !important;
+  box-shadow: none;
+  border-color: #fff;
 }
