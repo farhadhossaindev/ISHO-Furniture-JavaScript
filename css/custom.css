@@ -288,8 +288,6 @@
 
 .porpular-searches-content {
   padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .porpular-searches-content h1 {
@@ -316,8 +314,10 @@
   color: #fff;
 }
 
-.gallery-heading {
+.gallery-heading h1 {
   margin-top: 55px;
+  font-weight: 900;
+  font-family: helvetica;
 }
 
 .gallery-price {
